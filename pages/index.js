@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Link from 'next/link'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 
@@ -16,10 +16,10 @@ export default function Home() {
       </Head>
       <nav className={styles.mainnav}>
           <ul>
-            <li>HOME</li>
-            <li>ABOUT</li>
-            <li>BLOGS</li>
-            <li>CONTACT</li>
+            <Link href='/'><li>HOME</li></Link>
+            <Link href='/about'><li>ABOUT</li></Link>
+            <Link href='/blog'><li>BLOG</li></Link>
+            <Link href='/contact'><li>CONTACT</li></Link>
           </ul>
         </nav>
       <main className={styles.main}>
@@ -30,15 +30,15 @@ export default function Home() {
         </div>
         <div className={styles.blogs}>
           <h1>Popular Blog </h1>
-          <div className="blogItem">
+          <div className={styles.blogItem}>
             <h3>Ganpat Chat Bhandar</h3>
             <p>This Shop is famous for Aloo Tikki</p>
           </div>
-          <div className="blogItem">
+          <div className={styles.blogItem}>
             <h3>How to learn JavaScript in 2022?</h3>
             <p>JavaScript is the language used to design logic for the web</p>
           </div>
-          <div className="blogItem">
+          <div className={styles.blogItem}>
             <h3>How to learn JavaScript in 2022?</h3>
             <p>JavaScript is the language used to design logic for the web</p>
           </div>
