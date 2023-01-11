@@ -13,12 +13,13 @@
   display: inherit;
   justify-content: center;
   align-items: center;
-  font-size: 3.85rem;
+  font-size: 1.25rem;
   max-width: var(--max-width);
   width: 100%;
   z-index: 2;
   font-family: var(--font-mono);
   font-weight: bold;
+  padding-top: 1rem;
 }
 
 .description a {
@@ -299,4 +300,9 @@
   list-style: none;
   font-weight: bold;
   padding-top: 1rem;
+  font-size: 1rem;
+}
+.title{
+  font-size: 4rem;
+  font-weight: bold;
 }
